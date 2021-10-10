@@ -4,7 +4,7 @@
   "description": "Notion authentication strategy for Passport and Node.js",
   "main": "./lib/passport-notion",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prepublishOnly": "tsc"
   },
   "repository": {
     "type": "git",
@@ -28,7 +28,11 @@
   },
   "homepage": "https://github.com/rat9615/passport-notion#readme",
   "dependencies": {
+    "@notionhq/client": "0.4.2",
     "passport-strategy": "^1.0.0",
     "pkginfo": "^0.4.1"
+  },
+  "devDependencies": {
+    "typescript": "4.4.3"
   }
 }
