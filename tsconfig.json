@@ -7,6 +7,7 @@
 
     /* Modules */
     "module": "commonjs",                                /* Specify what module code is generated. */
+    "resolveJsonModule": true,
     "rootDir": "./",                                  /* Specify the root folder within your source files. */
 
     /* Emit */

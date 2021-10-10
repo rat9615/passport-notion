@@ -29,8 +29,7 @@
   "homepage": "https://github.com/rat9615/passport-notion#readme",
   "dependencies": {
     "@notionhq/client": "0.4.2",
-    "passport-strategy": "^1.0.0",
-    "pkginfo": "^0.4.1"
+    "passport-strategy": "^1.0.0"
   },
   "devDependencies": {
     "typescript": "4.4.3"

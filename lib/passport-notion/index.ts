@@ -1,9 +1,6 @@
 // Load modules
 import Strategy from "./strategy"
-import pkginfo from "pkginfo"
-
-// Framework version
-pkginfo(module, "version")
+import { version } from "../../package.json"
 
 // Expose constructors
-export { Strategy }
+export { Strategy, version }
