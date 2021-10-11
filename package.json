@@ -1,6 +1,6 @@
 {
   "name": "passport-notion",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Notion authentication strategy for Passport and Node.js",
   "main": "./lib/passport-notion",
   "scripts": {
