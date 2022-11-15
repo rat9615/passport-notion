@@ -1,6 +1,6 @@
 import https from "https"
 import { URL } from "url"
-import { Strategy as PassportStrategy } from "passport"
+import { Strategy as PassportStrategy } from "passport-strategy"
 import type { GetUserResponse } from "@notionhq/client/build/src/api-endpoints"
 
 export type NotionPersonUser = Extract<GetUserResponse, { type: "person" }>
