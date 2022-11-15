@@ -103,6 +103,8 @@ export default class Strategy extends PassportStrategy {
       authUrl.searchParams.set("response_type", "code")
       if (this._options?.state) {
         authUrl.searchParams.set("state", this._options.state)
+      } else if (options.state) {
+        authUrl.searchParams.set("state", options.state)
       }
       const location = authUrl.toString()
       this.redirect(location)
