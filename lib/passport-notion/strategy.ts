@@ -1,6 +1,6 @@
 import https from "https"
 import { URL } from "url"
-import { Strategy as PassportStrategy } from "passport-strategy"
+import { Strategy as PassportStrategy } from "passport"
 import type { GetUserResponse } from "@notionhq/client/build/src/api-endpoints"
 
 export type NotionPersonUser = Extract<GetUserResponse, { type: "person" }>
@@ -103,6 +103,8 @@ export default class Strategy extends PassportStrategy {
       authUrl.searchParams.set("response_type", "code")
       if (this._options?.state) {
         authUrl.searchParams.set("state", this._options.state)
+      } else if (options.state) {
+        authUrl.searchParams.set("state", options.state)
       }
       const location = authUrl.toString()
       this.redirect(location)
